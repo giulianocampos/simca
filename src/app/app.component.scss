@@ -1,7 +1,26 @@
+.toolbar {
+  display: flex;
+  min-height: 70px;
+  background-color: #ccdceb;
+
+  mat-toolbar {
+    background-color: #ccdceb;
+    min-height: 70px;
+
+    .options {
+      font-size: 18px;
+      margin-left: 20px;
+    }
+  }
+
+  .buttons {
+    align-self: center;
+  }
+}
+
 .example-spacer {
   flex: 1 1 auto;
 }
-
 
 mat-sidenav {
   width: 100%;

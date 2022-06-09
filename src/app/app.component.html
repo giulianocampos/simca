@@ -1,19 +1,24 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
+<div class="toolbar">
+  <mat-toolbar>
     <span>My App</span>
-    <span class="example-spacer"></span>
-    <button fxShow="false" fxHide.lt-sm="false" mat-icon-button (click)="sidenav.toggle()">
-      <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
-      <mat-icon *ngIf="sidenav.opened">close</mat-icon>
-    </button>
-  </mat-toolbar-row>
-</mat-toolbar>
+    <div class="options">
+      <span fxShow="true" fxHide.lt-sm="true">INÍCIO</span>
+      <span fxShow="true" fxHide.lt-sm="true">INSTRUÇÕES</span>
+      <span fxShow="true" fxHide.lt-sm="true">AJUDA</span>
+    </div>
+  </mat-toolbar>
+
+  <button class="buttons" fxShow="false" fxHide.lt-sm="false" mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+    <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+  </button>
+</div>
 
 <mat-sidenav-container fxFlexFill>
   <mat-sidenav #sidenav mode="over">
     <mat-nav-list>
       <a mat-list-item>
-        <span>teste</span>
+        <span>INÍCIO</span>
       </a>
       <a mat-list-item>
         <span>teste</span>
@@ -27,4 +32,5 @@
   <mat-sidenav-content>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
+
 </mat-sidenav-container>

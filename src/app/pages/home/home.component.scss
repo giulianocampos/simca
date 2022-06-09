@@ -1,0 +1,27 @@
+.title-image {
+ display: flex;
+
+ .image {
+   margin-top: 12px;
+   text-align: center;
+
+  .folhas {
+    border-radius: 40px;
+  }
+ }
+
+ .title {
+   align-self: center;
+   margin-left: 12px;
+   margin-right: 12px;
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+
+    .danger {
+      color: rgb(2, 170, 2);
+    }
+  }
+ }
+}
