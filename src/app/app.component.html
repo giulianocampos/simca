@@ -1,17 +1,18 @@
-<div class="toolbar">
-  <mat-toolbar>
-    <span>My App</span>
+<div class="toolbar-conteiner">
+  <mat-toolbar class="first-toolbar">
+    <div class="icon">
+      <button class="menu-icon" fxShow="false" fxHide.lt-sm="false" mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+        <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+      </button>
+    </div>
     <div class="options">
       <span fxShow="true" fxHide.lt-sm="true">INÍCIO</span>
       <span fxShow="true" fxHide.lt-sm="true">INSTRUÇÕES</span>
       <span fxShow="true" fxHide.lt-sm="true">AJUDA</span>
     </div>
-  </mat-toolbar>
 
-  <button class="buttons" fxShow="false" fxHide.lt-sm="false" mat-icon-button (click)="sidenav.toggle()">
-    <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
-    <mat-icon *ngIf="sidenav.opened">close</mat-icon>
-  </button>
+  </mat-toolbar>
 </div>
 
 <mat-sidenav-container fxFlexFill>

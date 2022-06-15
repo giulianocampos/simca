@@ -1,25 +1,23 @@
-.toolbar {
+mat-sidenav-content {
+  background-color: #ebebeb;
+}
+.toolbar-conteiner {
   display: flex;
-  min-height: 70px;
-  background-color: #ccdceb;
+  //min-height: 70px;
 
-  mat-toolbar {
-    background-color: #ccdceb;
-    min-height: 70px;
+  .first-toolbar {
+    background-color: #ebebeb;
 
     .options {
+      color: #555454;
       font-size: 18px;
       margin-left: 20px;
     }
-  }
 
-  .buttons {
-    align-self: center;
+    .menu-icon {
+      color: #555454;
+    }
   }
-}
-
-.example-spacer {
-  flex: 1 1 auto;
 }
 
 mat-sidenav {

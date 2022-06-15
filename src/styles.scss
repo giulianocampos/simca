@@ -36,7 +36,9 @@ $frontend-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 html, body { height: 100%; }
 
-* { margin: 0; font-family: 'Familjen Grotesk', sans-serif; }
+//* { margin: 0; font-family: 'Familjen Grotesk', sans-serif; }
+* { margin: 0; font-family: 'Oswald', sans-serif; }
