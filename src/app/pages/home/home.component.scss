@@ -8,17 +8,59 @@
    margin-left: 12px;
    margin-right: 12px;
 
-   .image {
+   //tablet & desktop
+   @media only screen and (min-width: 768px) {
+   .images {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    text-align: center;
+
+    .img-folhas {
+      border-radius: 20px;
+      width: 80%;
+    }
+
+    .img-definir {
+      border-radius: 20px;
+      width: 80%;
+    }
+   }
+  }
+
+  //mobile
+  @media only screen and (max-width: 767px) {
+    .images {
+     display: flex;
+     flex-direction: column;
      margin-top: 12px;
-     //margin-right: 12px;
      text-align: center;
 
-    .folhas {
+     .img-folhas {
       border-radius: 20px;
-      width: 100%;
+      margin-bottom: 12px;
+      width: 80%;
+     }
+
+     .img-definir {
+      border-radius: 20px;
+      width: 80%;
+     }
     }
    }
 
+   .main-title {
+    h2 {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: -10px;
+
+      .danger {
+        color: #04bd95;
+        font-weight: bold;
+      }
+    }
+  } 
    .orientacoes {
     text-align: center;
 
@@ -37,16 +79,6 @@
     }
    }
 
-  h2 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: -10px;
-
-    .danger {
-      color: #04bd95;
-      font-weight: bold;
-    }
-  }
  }
 }
 
